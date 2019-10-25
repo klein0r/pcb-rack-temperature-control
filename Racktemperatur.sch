@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
 LIBS:Racktemperatur-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Rack Temperature Control"
-Date "2019-06-03"
-Rev "1.2"
+Date "2019-10-25"
+Rev "1.3"
 Comp "haus-automatisierung.com"
 Comment1 "Matthias Kleine"
 Comment2 ""
@@ -18,8 +18,8 @@ $Comp
 L 74xx:74HC595 U1
 U 1 1 5CA724F1
 P 3800 5300
-F 0 "U1" H 3800 6078 50  0000 C CNN
-F 1 "74HC595" H 3800 5987 50  0000 C CNN
+F 0 "U1" H 3550 5850 50  0000 C CNN
+F 1 "74HC595" H 4000 5850 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 3800 5300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 3800 5300 50  0001 C CNN
 	1    3800 5300
@@ -29,8 +29,8 @@ $Comp
 L 74xx:74HC595 U2
 U 1 1 5CA72541
 P 6450 5250
-F 0 "U2" H 6450 6028 50  0000 C CNN
-F 1 "74HC595" H 6450 5937 50  0000 C CNN
+F 0 "U2" H 6200 5800 50  0000 C CNN
+F 1 "74HC595" H 6650 5800 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 6450 5250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 6450 5250 50  0001 C CNN
 	1    6450 5250
@@ -40,8 +40,8 @@ $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5CA72A4D
 P 5650 3100
-F 0 "A1" H 5650 2014 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 5650 1923 50  0000 C CNN
+F 0 "A1" H 6000 4050 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5050 4050 50  0000 C CNN
 F 2 "Module:Arduino_Nano_WithMountingHoles" H 5800 2150 50  0001 L CNN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5650 2100 50  0001 C CNN
 	1    5650 3100
@@ -79,7 +79,7 @@ Wire Wire Line
 	6450 6250 5650 6250
 Connection ~ 5650 6250
 Wire Wire Line
-	5650 4100 5650 5450
+	5650 4100 5650 4250
 Wire Wire Line
 	5750 2100 5750 1950
 Wire Wire Line
@@ -129,34 +129,34 @@ Wire Wire Line
 $Comp
 L Device:R R1
 U 1 1 5CA7E658
-P 5400 6100
-F 0 "R1" H 5470 6146 50  0000 L CNN
-F 1 "100Ω" H 5470 6055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5330 6100 50  0001 C CNN
-F 3 "~" H 5400 6100 50  0001 C CNN
-	1    5400 6100
+P 5500 6100
+F 0 "R1" H 5570 6146 50  0000 L CNN
+F 1 "100Ω" H 5570 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 6100 50  0001 C CNN
+F 3 "~" H 5500 6100 50  0001 C CNN
+	1    5500 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5CA7E6C1
-P 8050 6100
-F 0 "R2" H 8120 6146 50  0000 L CNN
-F 1 "100Ω" H 8120 6055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7980 6100 50  0001 C CNN
-F 3 "~" H 8050 6100 50  0001 C CNN
-	1    8050 6100
+P 8100 6100
+F 0 "R2" H 8170 6146 50  0000 L CNN
+F 1 "100Ω" H 8170 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8030 6100 50  0001 C CNN
+F 3 "~" H 8100 6100 50  0001 C CNN
+	1    8100 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8050 6250 6450 6250
+	8100 6250 6450 6250
 Connection ~ 6450 6250
 $Comp
 L Display_Character:LTS-6980HR AFF2
 U 1 1 5CA7516E
 P 7500 5250
-F 0 "AFF2" H 7500 5917 50  0000 C CNN
-F 1 "LTS-6980HR" H 7500 5826 50  0000 C CNN
+F 0 "AFF2" H 7200 5800 50  0000 C CNN
+F 1 "LTS-6980HR" H 7650 5800 50  0000 C CNN
 F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 7500 4650 50  0001 C CNN
 F 3 "http://datasheet.octopart.com/LTS-6960HR-Lite-On-datasheet-11803242.pdf" H 7500 5250 50  0001 C CNN
 	1    7500 5250
@@ -167,14 +167,14 @@ Wire Wire Line
 Wire Wire Line
 	3250 3500 4950 3500
 Wire Wire Line
-	3800 6250 5400 6250
+	3800 6250 5500 6250
 Wire Wire Line
-	5350 5000 5400 5000
+	5350 5000 5500 5000
 Wire Wire Line
-	5400 5000 5400 5950
+	5500 5000 5500 5950
 Wire Wire Line
-	5400 6250 5650 6250
-Connection ~ 5400 6250
+	5500 6250 5650 6250
+Connection ~ 5500 6250
 Wire Wire Line
 	4200 5800 4350 5800
 Wire Wire Line
@@ -416,12 +416,12 @@ Wire Wire Line
 Wire Wire Line
 	8550 3100 8550 6250
 Wire Wire Line
-	8550 6250 8050 6250
-Connection ~ 8050 6250
+	8550 6250 8100 6250
+Connection ~ 8100 6250
 Wire Wire Line
-	8000 4950 8050 4950
+	8000 4950 8100 4950
 Wire Wire Line
-	8050 4950 8050 5950
+	8100 4950 8100 5950
 Wire Wire Line
 	4200 5000 4250 5000
 Wire Wire Line
@@ -432,8 +432,8 @@ $Comp
 L Display_Character:LTS-6980HR AFF1
 U 1 1 5CA881EC
 P 4850 5300
-F 0 "AFF1" H 4850 5967 50  0000 C CNN
-F 1 "LTS-6980HR" H 4850 5876 50  0000 C CNN
+F 0 "AFF1" H 4550 5850 50  0000 C CNN
+F 1 "LTS-6980HR" H 5000 5850 50  0000 C CNN
 F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 4850 4700 50  0001 C CNN
 F 3 "http://datasheet.octopart.com/LTS-6960HR-Lite-On-datasheet-11803242.pdf" H 4850 5300 50  0001 C CNN
 	1    4850 5300
@@ -444,11 +444,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 5100 4250 6200
 Wire Wire Line
-	4250 6200 5300 6200
+	4250 6200 5350 6200
 Wire Wire Line
-	5300 6200 5300 5600
-Wire Wire Line
-	5300 5600 5350 5600
+	5350 6200 5350 5600
 Wire Wire Line
 	6850 4950 6900 4950
 Wire Wire Line
@@ -459,12 +457,6 @@ Wire Wire Line
 	6850 5050 6900 5050
 Wire Wire Line
 	6900 5050 6900 6200
-Wire Wire Line
-	6900 6200 7950 6200
-Wire Wire Line
-	7950 6200 7950 5550
-Wire Wire Line
-	7950 5550 8000 5550
 Wire Wire Line
 	4200 5200 4300 5200
 Wire Wire Line
@@ -551,7 +543,6 @@ NoConn ~ 5150 2900
 NoConn ~ 5150 3000
 NoConn ~ 5150 3100
 NoConn ~ 5150 3300
-NoConn ~ 5150 3800
 NoConn ~ 5750 4100
 NoConn ~ 950  3350
 NoConn ~ 950  2800
@@ -573,4 +564,34 @@ Wire Wire Line
 Connection ~ 1150 3550
 Wire Wire Line
 	1150 3550 1150 3000
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5DB3DDF3
+P 4300 4250
+F 0 "J4" H 4218 3925 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 4218 4016 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 4300 4250 50  0001 C CNN
+F 3 "~" H 4300 4250 50  0001 C CNN
+	1    4300 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5150 3800 4850 3800
+Wire Wire Line
+	4850 3800 4850 4150
+Wire Wire Line
+	4850 4150 4500 4150
+Wire Wire Line
+	4500 4250 5650 4250
+Connection ~ 5650 4250
+Wire Wire Line
+	5650 4250 5650 5450
+NoConn ~ 6850 5750
+Wire Wire Line
+	8000 5550 8000 6200
+Wire Wire Line
+	6900 6200 8000 6200
+NoConn ~ 8000 4850
+NoConn ~ 5350 4900
+NoConn ~ 9000 2700
 $EndSCHEMATC
