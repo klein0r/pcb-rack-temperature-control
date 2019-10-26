@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Rack Temperature Control"
 Date "2019-10-25"
-Rev "1.3"
+Rev "1.4"
 Comp "haus-automatisierung.com"
 Comment1 "Matthias Kleine"
 Comment2 ""
