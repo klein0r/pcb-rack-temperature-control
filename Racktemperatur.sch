@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Rack Temperature Control"
-Date "2019-10-26"
+Date "2019-11-12"
 Rev "1.5"
 Comp "haus-automatisierung.com"
 Comment1 "Matthias Kleine"
@@ -358,25 +358,6 @@ Wire Wire Line
 	1850 3750 1150 3750
 Wire Wire Line
 	4600 3250 4450 3250
-$Comp
-L Connector:Barrel_Jack_MountingPin J3
-U 1 1 5CA80C86
-P 9000 3000
-F 0 "J3" H 8771 2873 50  0000 R CNN
-F 1 "Barrel_Jack_MountingPin" H 8771 2964 50  0000 R CNN
-F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 9050 2960 50  0001 C CNN
-F 3 "~" H 9050 2960 50  0001 C CNN
-	1    9000 3000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8700 2900 6850 2900
-Wire Wire Line
-	6850 2900 6850 1750
-Wire Wire Line
-	8700 3100 8550 3100
-Wire Wire Line
-	8550 3100 8550 6250
 Wire Wire Line
 	8550 6250 8100 6250
 Connection ~ 8100 6250
@@ -553,7 +534,7 @@ Wire Wire Line
 	6900 6200 8000 6200
 NoConn ~ 8000 4850
 NoConn ~ 5350 4900
-NoConn ~ 9000 2700
+NoConn ~ 7250 3600
 Wire Wire Line
 	4600 3100 4450 3100
 Wire Wire Line
@@ -734,4 +715,23 @@ Wire Wire Line
 Connection ~ 4600 1500
 Wire Wire Line
 	4100 1500 4600 1500
+Wire Wire Line
+	8550 2900 8550 6250
+$Comp
+L Connector:Barrel_Jack_MountingPin J3
+U 1 1 5CA80C86
+P 6950 3600
+F 0 "J3" V 7200 3900 50  0000 R CNN
+F 1 "Barrel_Jack_MountingPin" V 6650 4050 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 7000 3560 50  0001 C CNN
+F 3 "~" H 7000 3560 50  0001 C CNN
+	1    6950 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 1750 6850 3300
+Wire Wire Line
+	7050 3300 7050 2900
+Wire Wire Line
+	7050 2900 8550 2900
 $EndSCHEMATC
