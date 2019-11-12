@@ -302,29 +302,24 @@ Wire Wire Line
 Connection ~ 4900 1050
 Wire Wire Line
 	4900 1050 4900 1200
-Wire Wire Line
-	6250 3500 3400 3500
 $Comp
 L Device:R R4
 U 1 1 5CAC6276
-P 3400 3650
-F 0 "R4" H 3470 3696 50  0000 L CNN
-F 1 "10kΩ" H 3470 3605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3330 3650 50  0001 C CNN
-F 3 "~" H 3400 3650 50  0001 C CNN
-	1    3400 3650
+P 3400 3750
+F 0 "R4" H 3470 3796 50  0000 L CNN
+F 1 "10kΩ" H 3470 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3330 3750 50  0001 C CNN
+F 3 "~" H 3400 3750 50  0001 C CNN
+	1    3400 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 3500 3250 3500
-Wire Wire Line
-	3400 3800 3400 3950
+	3400 3900 3400 3950
 Wire Wire Line
 	3400 3950 3800 3950
 Connection ~ 3800 3950
 Wire Wire Line
 	3800 3950 3800 6350
-Connection ~ 3400 3500
 Wire Wire Line
 	2950 3300 2950 3200
 Wire Wire Line
@@ -531,7 +526,6 @@ Wire Wire Line
 	8000 6300 9100 6300
 NoConn ~ 9100 4950
 NoConn ~ 6450 5000
-NoConn ~ 8350 3700
 Wire Wire Line
 	5700 3200 5550 3200
 Wire Wire Line
@@ -633,7 +627,7 @@ Wire Wire Line
 	5250 3200 5000 3200
 Text Label 6350 1950 0    50   ~ 0
 5V
-Text Label 6350 2050 0    50   ~ 0
+Text Label 7200 2050 0    50   ~ 0
 3V3
 $Comp
 L Regulator_Linear:L7805 U4
@@ -734,4 +728,12 @@ Wire Wire Line
 Connection ~ 3800 6350
 Wire Wire Line
 	1300 3750 1400 3750
+Wire Wire Line
+	3250 3500 3400 3500
+Wire Wire Line
+	3400 3500 3400 3600
+Wire Wire Line
+	6250 3500 3400 3500
+Connection ~ 3400 3500
+NoConn ~ 1000 4150
 $EndSCHEMATC

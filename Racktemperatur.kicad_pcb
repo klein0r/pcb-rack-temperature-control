@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 46)
+    (drawings 47)
     (tracks 304)
     (zones 0)
     (modules 28)
@@ -12,7 +12,7 @@
   (page A4)
   (title_block
     (title "Rack Temperature Control")
-    (date 2019-10-26)
+    (date 2019-11-12)
     (rev 1.5)
     (company haus-automatisierung.com)
     (comment 1 "Matthias Kleine")
@@ -3780,6 +3780,9 @@
     )
   )
 
+  (gr_text "R    Y    G" (at 163.449 103.6828) (layer F.SilkS)
+    (effects (font (size 0.5 0.5) (thickness 0.125)))
+  )
   (gr_text 100nF (at 166.5732 83.185 90) (layer B.SilkS) (tstamp 5DB4B7F9)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
@@ -4251,7 +4254,7 @@
   (segment (start 180.7464 86.2744) (end 179.1302 84.6582) (width 0.25) (layer B.Cu) (net 58))
   (segment (start 180.7464 87.2744) (end 180.7464 86.2744) (width 0.25) (layer B.Cu) (net 58))
 
-  (zone (net 6) (net_name GND) (layer B.Cu) (tstamp 5DB4952A) (hatch edge 0.508)
+  (zone (net 6) (net_name GND) (layer B.Cu) (tstamp 5DCB07CC) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -4762,7 +4765,7 @@
       )
     )
   )
-  (zone (net 6) (net_name GND) (layer F.Cu) (tstamp 5DB49527) (hatch edge 0.508)
+  (zone (net 6) (net_name GND) (layer F.Cu) (tstamp 5DCB07C9) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
