@@ -3792,7 +3792,7 @@
   (gr_text LM7805 (at 168.6052 89.4334) (layer B.SilkS) (tstamp 5DB4ABFA)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
   )
-  (gr_text "D2 = DS18B20 1Wire Sensor\nD5, D7, D7 = LED\nD9 = Fan PWM\nD10 = 7 Seg RCLK\nD11 = 7 Seg SRCLK\nD12 = 7 Seg SER\nD13 = Terminal" (at 151.6634 88.0364 90) (layer B.SilkS) (tstamp 5CBC415B)
+  (gr_text "D2 = DS18B20 1Wire Sensor\nD5, D6, D7 = LED\nD9 = Fan PWM\nD10 = 7 Seg RCLK\nD11 = 7 Seg SRCLK\nD12 = 7 Seg SER\nD13 = Terminal" (at 151.6634 88.0364 90) (layer B.SilkS) (tstamp 5CBC415B)
     (effects (font (size 0.7 0.7) (thickness 0.15)) (justify left mirror))
   )
   (gr_text 330Ω (at 169.926 113.7412 90) (layer B.SilkS) (tstamp 5DB47FC1)
