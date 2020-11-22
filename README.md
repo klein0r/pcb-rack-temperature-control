@@ -4,6 +4,8 @@
 
 ![PCB Preview](https://raw.githubusercontent.com/klein0r/pcb-rack-temperature-control/master/preview.png)
 
+![PCB Photo](https://raw.githubusercontent.com/klein0r/pcb-rack-temperature-control/master/previewReal.jpg)
+
 ## License
 
 The MIT License (MIT)
